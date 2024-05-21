@@ -21,6 +21,8 @@ while resultado_jugador1 < 3 and resultado_jugador2 < 3:
     elif Jugador2 == Piedra and Jugador1 == Papel or Jugador2 == Papel and Jugador1 == Tijera or Jugador2 == Tijera and Jugador1 == Piedra:
         print ("Punto para el jugador 1.")
         resultado_jugador1 += 1
+    elif Jugador1 == Piedra and Jugador2 == Piedra or Jugador1 == Papel and Jugador2 == Papel or Jugador1 == Tijera and Jugador2 == Tijera:
+        print("Usaron el mismo movimiento , intenten de vuelta.")
     elif Jugador1 and Jugador2 != Piedra and Papel and Tijera:
         print("El movimiento no es correcto vuelve a intentarlo.")
 if resultado_jugador1 ==3:
